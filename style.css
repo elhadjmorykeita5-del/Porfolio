@@ -1,0 +1,301 @@
+body {
+    background-image: url(file_000000006fb8722f8a204346153d092b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    /* SUPPRIME width: 100vh et height: 240vh */
+    width: 100%; 
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+    margin-bottom: 15px;
+}
+
+/* Remplace les positions relatives par des marges automatiques ou du Flexbox */
+.one, .image, .propo, .carte, .projet, .carteS {
+    position: static; /* On annule le positionnement forcé */
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image img {
+    height: auto;
+    width: 80%; /* L'image s'adapte à l'écran */
+    max-width: 400px;
+}
+@media (max-width: 768px) {
+    /* On empile les éléments du header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* On transforme les lignes (row) en colonnes (column) */
+    .carte, .carteS {
+        flex-direction: column;
+        align-items: center;
+        left: 0; /* On remet à zéro */
+    }
+
+    .carte1, .carte2, .carte3, .carte4, .carteS1, .carteS2, .carteS3 {
+        left: 0;
+        right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .propo {
+        text-align: center;
+        padding: 0 20px;
+    }
+        .aa{
+        color: blue;
+    }
+
+}
+ button{
+        background-color: blue;
+        height: 30px;
+        width: 120px;
+        border-radius: 50px;
+        border: 2px solid rgb(93, 93, 216);
+    }
+    button a{
+        text-decoration: none;
+        color: white; 
+}
+.icon1{
+    font-size: 2em;
+    position: relative;
+    top: 6vh;
+
+}
+.icon-facebook2{
+    background-color: rgb(253, 252, 255);
+    color: blue;
+}
+.icon-whatsapp{
+    background-color: rgb(54, 209, 54);
+}
+.icon-linkedin{
+    background-color: white;
+    color: rgb(28, 28, 143);
+}
+.carte1{
+    margin-bottom: 10vh;    
+    border: 2px solid rgb(93, 93, 216);
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+.carte2{
+    margin-bottom: 10vh;   
+    border: 2px solid rgb(93, 93, 216);
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.carte3{
+    margin-bottom: 10vh; 
+    border: 2px solid rgb(93, 93, 216);
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.carte4{
+    margin-bottom: 10vh;
+    
+    border: 2px solid rgb(93, 93, 216);
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+
+}
+.a, .b, .c{
+    height: auto;
+    width: 80%; /* L'image s'adapte à l'écran */
+    max-width: 400px;
+}
+
+/* pour les grangs ecrans */
+@media (min-width: 992px){
+    body {
+        background-image: url(file_000000006fb8722f8a204346153d092b.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        margin: 0;
+        color: white;
+         /* SUPPRIME width: 100vh et height: 240vh */
+        width: 100%; 
+        overflow-x: hidden; /* Empêche le scroll horizontal */
+        margin-bottom: 15px;
+        height: 305vh;
+   }
+    .one{
+        position: relative;
+        
+    }
+    .aa{
+    color: blue;
+    }
+    button{
+        position: relative;
+        background-color: blue;
+        height: 30px;
+        width: 150px;
+        border-radius: 50px;
+        border: 2px solid rgb(93, 93, 216);
+    }
+    button a{
+        color: white;
+        text-decoration: none;
+    }
+    icon1{
+        position: relative;
+   
+    }
+    .icon-envelop{
+        position: relative;
+    }
+    icon-facebook2{
+        color: blue;
+    }
+    .icon-whatsapp{
+        color: rgb(242, 243, 242);
+        background-color: rgb(129, 238, 129);
+    }
+    .icon-linkedin{
+        background-color: rgb(246, 246, 250);
+        color: rgb(99, 8, 245);
+    }
+
+    .propo h2{
+        color: blue;
+    }
+    .propo{
+        position: relative;
+        margin-top: 8vh;
+    }
+    .propo h3{
+        font-size: bolder;
+    }
+    .propo p{
+        font-size: 15px;
+        justify-content: center;
+    }
+
+
+    .carte{
+        position: relative;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .carte:hover{
+        box-shadow: 3px white;
+    }
+    .carte1{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 40px 30px;
+        position: relative;
+        height: 27vh;
+        top: 5vh;
+
+    }
+    .carte2{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 40px 30px;
+        position: relative;
+        left: 10vw;
+    }
+    .carte3{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 40px 30px;
+        position: relative;
+        left: 15vw;
+    }
+    .carte4{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 40px 30px;
+        position: relative;
+        left: 25vw;
+    }
+
+    .icon-html-five{
+        font-size: 60px;    
+    }
+    .icon-css3{
+        font-size: 70px;
+    }
+    .icon-javascript{
+        font-size: 70px;
+    }
+    .icon-python{
+        font-size: 70px;
+    }
+
+    .projet{
+        position: relative;
+
+    }
+
+    .projet h2{
+        color: blue;
+    }
+    .carteS{
+        display: flex;
+        flex-direction: row;
+        gap: 5ox;
+        position: relative;
+        top: 95px;
+        margin-left: 2vw;
+        bottom: 150px;
+        margin-left: -10px;
+        text-align: center;
+
+    }
+    .carteS1{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 40px 30px;
+        position: relative;
+        left: 30px;
+
+    }
+    .carteS2{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 30px 30px;
+        position: relative;
+        left: 80px;
+
+    }
+    .carteS3{
+        border: 2px solid rgb(93, 93, 216);
+        padding: 40px 30px;
+        position: relative;
+        left: 120px;
+
+    }
+
+    .a{
+        position: relative;
+        height: 20vh;
+        width: 20vx;
+    }
+    .b{
+        position: relative;
+        height: 20vh;
+        width: 20vx;
+    }
+    .c{
+        position: relative;
+        height: 20vh;
+        width: 20vx;
+    }
+
+}
